@@ -1,56 +1,67 @@
-# Code-library
+## library
 
-## String
+#### 自己封装的常用操作实例
+实例为日常开发常用的小实例，包括数组去重，打乱数组，字母大小写转换，cookie操作的封装等。
 
-> 字符串相关操作
+#### 使用方法
+##### 引入library.js
+##### 也可以引入library.min.js
+//去除空格
 
-- trim.js ---- 去除字符串空格
-- changeCase.js ---- 字母大小写切换
-- repeatStr.js ---- 字符串循环复制
-- replaceAll.js ---- 字符串替换
-- replaceStr.js ---- 替换*
-- checkType.js ---- 检测字符串
-- checkPwd.js ---- 检测密码强度
-- randomNumber.js ---- 随机码
-- countStr.js ---- 查找字符串
+library.trim(' xx x x',1);
 
-## Array
+//xxxx
 
-> 数组操作
 
-- removeRepeatArray.js ---- 数组去重
-- upsetArr.js ---- 数组顺序打乱
-- max_minArr.js ---- 数组最大值最小值
-- sumArr.js ---- 数组求和
-- covArr.js ---- 数组平均值
-- randomOne.js ---- 从数组中随机获取元素
-- getEleCount.js ---- 返回数组(字符串)一个元素出现的次数
-- getCount.js ---- 返回数组（字符串）出现最多的几次元素和出现次数
-- getArrayNum.js ---- 得到n1-n2下标的数组
-- removeArrayForValue.js ---- 筛选数组
+//大小写转换
 
-## DOM
+library.changeCase('asdXaaaXHwwHwwad',3)
 
-> 基础DOM操作
+//"ASDxAAAxhWWhWWAD"
 
-- hasClass.js ---- 检测对象是否有哪个类名
-- addClass.js ---- 添加类名
-- removeClass.js ---- 删除类名
-- replaceClass.js ---- 替换类名("被替换的类名", "替换的类名")
-- siblings.js ---- 获取兄弟节点
-- css.js ---- 设置样式
-- html.js ---- 设置文本内容
-- display.js ---- 显示隐藏
+具体使用方式在library.js里面有说明
 
-## Other
+#### 1.1.0版本
 
-> 其他操作
+##### 更新方法
+1.upDigit(现金额大写转换函数)存在的bug修复！
 
-- cookie.js ---- cookie
-- filterParams.js ---- 清除对象中值为空的属性
-- upDigit.js ---- 现金金额大写转换
-- UrlPrmt.js ---- 获取, 设置URL参数
-- randomNum.js ---- 随机返回一个范围的数字
-- randomColor.js ---- 随机产生颜色
-- getEndTime.js ---- Date日期时间部分
-- getFontSize.js ---- 适配rem
+2.changeCase(大小写转换函数)存在的bug修复！
+
+3.covArr(求数组平均数)存在的bug修改!
+
+4.随机码函数重命名，以前这个随机码函数名是randomNumber，和另一个函数重名了！现在命名randomWord，使用方式不变
+
+##### 优化写法
+
+1.sumArr（数字数组求和）
+
+##### 增加方法
+
+1.ecAjax(封装ajax操作函数)
+
+2.getOptionArray(获取对象数组某些项)
+
+3.filterOptionArray(排除数组某些项)
+
+4.loadImg(图片滚动懒加载)
+
+5.aftLoadImg(加载图片)
+
+6.longestWord(找出最长单词)
+
+7.titleCaseUp(句中单词首字母大写)
+
+8.browserInfo(手机类型判断)
+
+9.filterStr(过滤字符串(html标签，表情，特殊字符，)
+
+10.createKeyExp(创建正则字符)
+
+11.findKey(高亮文本)
+
+12.istype(数据类型判断)
+
+13.steamroller(数组扁平化)
+
+14.arraySort(对象数组排序)
